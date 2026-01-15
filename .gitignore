@@ -1,5 +1,8 @@
 *.env
 .env
 
+node_modules
+
 # Mac 
 .DS_Store
+

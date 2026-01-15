@@ -1,5 +1,6 @@
 {
 	"devDependencies": {
+		"@types/node": "^25.0.9",
 		"turbo": "^2.7.4",
 		"typescript": "^5.9.3"
 	}

@@ -1,0 +1,26 @@
+{
+  "name": "@acme/logger",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo \"(add eslint later)\"",
+    "test": "echo \"(add tests later)\""
+  },
+  "dependencies": {
+    "pino": "^9.14.0",
+    "pino-pretty": "^11.3.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  }
+}
