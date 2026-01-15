@@ -1,0 +1,6 @@
+{
+	"devDependencies": {
+		"turbo": "^2.7.4",
+		"typescript": "^5.9.3"
+	}
+}
