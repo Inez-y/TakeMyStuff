@@ -3,18 +3,18 @@ name: TakeMyStuff
 services:
   postgres:
     image: postgres:16-alpine
-    container_name: TakeMyStuff-postgres
+    container_name: takemystuff-postgres
     restart: unless-stopped
     environment:
       POSTGRES_USER: app
       POSTGRES_PASSWORD: app_password
-      POSTGRES_DB: TakeMyStuff
+      POSTGRES_DB: takemystuff
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U app -d TakeMyStuff"]
+      test: ["CMD-SHELL", "pg_isready -U app -d takemystuff"]
       interval: 5s
       timeout: 5s
       retries: 20
